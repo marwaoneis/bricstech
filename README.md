@@ -9,15 +9,13 @@ This repository contains basic JavaScript code snippets commonly used for handli
 
 ```javascript
 // Access the global variables from the parent window
-var clientId = window.parent.clientId;
-var clientName = window.parent.clientName;
-
-console.log("Client ID:", clientId);
+var id = window.parent.id;
+var name = window.parent.name;
 
 // Populate the lookup field
-$('#lookupFieldId').val(clientId);
-$('#lookupFieldName').val(clientName);
-$('#lookupFieldEntityName').val("account");
+$('#lookupFieldId').val(id);
+$('#lookupFieldName').val(name);
+$('#lookupFieldEntityName').val("tableName");
 
 $('#lookupFieldId').siblings("div.input-group-btn").find("button").prop("disabled", true);
 $('#lookupFieldId').siblings("div.input-group-btn").hide();
