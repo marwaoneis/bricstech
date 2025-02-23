@@ -1,0 +1,408 @@
+<style>
+
+.btn-dark-blue2 {
+  background-color: #A30000;
+  border-color: #A30000 !important;
+  font-family: 'Figtree' , sans-serif;
+  font-size:14px;
+}
+
+
+.text-container2 {
+  background-color: #FFFFF2 !important;
+  border-radius: 20px; /* Adjust border radius as needed */
+  padding: 10px; /* Adjust padding as needed */
+  text-align: center; /* Center the text */
+  max-width: 800px; /* Adjust max width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  font-family: 'Figtree', sans-serif; /* Or your preferred font */
+  height:150px;
+
+}
+
+.text-container2 h2 {
+  font-size: 1rem; /* Adjust font size as needed */
+  margin-bottom: 10px; /* Adjust spacing */
+  color: #333; /* Adjust text color */
+}
+
+.text-container2 h1 {
+  font-size: 1.2rem; /* Adjust font size as needed */
+  margin-bottom: 20px; /* Adjust spacing */
+  color: #19180A; /* Adjust text color */
+  font-weight: bold;
+}
+
+.text-container2 p {
+  font-size: 1rem; /* Adjust font size as needed */
+  line-height: 1.6; /* Adjust line spacing */
+  color: #19180A; /* Adjust text color */
+}
+
+.hero-image {
+  width: 1300px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-radius: 20px; /* Removed !important */
+  overflow: hidden; /* Add overflow: hidden to clip content */
+  position: relative; /* Add position: relative for overlay */
+  height: 580px; 
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  display: block; 
+  object-fit: cover;
+}
+
+.hero-overlay {
+  position: absolute; /* Position overlay absolutely */
+  top: 0;
+  left: 0;
+  # width: 100%;
+  # height: 100%;
+}
+.image-container {
+width: 45%;
+border-radius: 10px;
+overflow: hidden;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+position: relative; /* Needed for absolute positioning of overlay */
+height: 500px;
+}
+
+.image-container img {
+width: 100%;
+height: 100%;
+display: block;
+object-fit: cover;
+}
+
+.image-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center; /* Center horizontally */
+justify-content: center; /* Center vertically */
+padding: 20px; /* Adjust padding as needed */
+}
+
+.signup-section {
+  width: 47%; /* Adjust width to leave a small gap */
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+
+}
+
+.signup-content {
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid #226F54;
+  width: 100%; /* Make content fill signup section */
+}
+.rowdisplay {
+  display: flex;
+  justify-content: space-between; /* Distribute space evenly between items */
+  width: 100%; /* Make row take full width */
+}
+.logo-container {
+margin-bottom: 10px;
+padding-top:1px;
+}
+
+.logo-container img {
+max-width: 130px !important; /* Adjust logo size as needed */
+# height: 153px;
+padding-top:1px;
+}
+
+</style>
+
+<nav class="navbar navbar-expand-lg navbar-light" data-turbo-permanent>
+<div class="container-fluid">
+  <a class="navbar-brand"  href="/" >
+    <img style="width:150px;" src="<%= asset_path 'logo2.png' %>" alt="BRICStech Logo">
+    <span class="brand-text" style="font-size:40px;">BRICStech</span>
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    <ul class="navbar-nav mx-auto horizontal-dropdown">
+      <%= render partial: 'shared/nav_links' %>
+    </ul>
+  </div>
+  <div class="d-flex">
+ <a href="#" class="btn btn-dark-blue btn-rounded me-2">Book a Demo</a>
+    
+        <a href="<%= login_path %>" class="btn btn-dark-blue2 btn-rounded me-2">Log In</a>
+  </div>
+</div>
+</nav>
+
+
+<div class="home-section">
+<div class="home-content">
+<div class="home-text">
+<div class="sub-text">
+
+<h2 style="font-size:45px; color:#A30000; padding-bottom:30px;">Designing the Future, One Solution at a Time</h2>
+  <h2>The BRICStech Promise</h2>
+  <p style="font-size:18px;">
+  Specializing in AI, we develop applications that transform the future of technology!
+  </p>
+  <p style="font-size:18px;">
+    
+  Our BRICStech Collective Program for partners enables us to collaborate closely with individuals and teams. Through these collaborations, we go beyond by focusing on the unique needs of communities and organizations, crafting innovative and transformative solutions that meet their evolving demands
+  </p>
+</div>
+
+<div class="home-buttons">
+  <a href="#" class="btn btn-outline-dark-red btn-rounded"style="background-color:#FFFFF2 !important; color:#19180A !important ;  border-color: #19180A !important;">Explore</a>
+  <a href="#" class="btn btn-filled-dark-red btn-rounded  ">Contact</a>
+</div>
+</div>
+
+
+</div>
+</div>
+<div class="hero-section">
+<div class="hero-image"  >
+<%= image_tag "cta2.png", alt: "Grey Box Image" %>
+<div class="hero-overlay">  
+  <div class="hero-content">
+    <h1 style="color:white !important; margin-left:150px !important; margin-top:10px !important ; margin-bottom:80px !important;" >Join the BRICStech Collective Program </h1>
+
+
+    <div class="text-container2" style="background-color:#FFFFF2; padding:25px; margin-left:130px">
+  
+  <p>Together, we can drive innovation and growth, building the future of technology, 
+  one project at a time. 
+  Whether you’re a solo developer or part of a team,
+   partner with BRICStech 
+  to collaborate on cutting-edge technology.</p>
+</div> 
+
+    <div class="hero-buttons" style="padding-left:150px !important ; padding-top:30px !important; ">
+      <a href="#" class="btn btn-outline-dark-red " style="background-color:#FFFFF2 !important; color:#19180A !important ;  border-color: #19180A !important;">Learn more</a>
+      <a href="<%= contactt_path %>" class="btn btn-filled-dark-red " style="border-color: #19180A !important;">Log In</a>
+    </div>
+  </div>
+</div>  
+</div>
+</div>
+
+
+<div class="two-images-section">
+<div class="image-container">
+<%= image_tag "home4.jpg", alt: "Image 1" %>
+<div class="image-overlay"> 
+ 
+<div class="text-container2" style="background-color:gray; padding:25px;  margin-top:320px;">
+  <h1>  Unlock New Opportunities & Maximize Your Earnings </h1>
+<p>Explore and earn royalties by partnering with us on impactful projects.</p>
+</div> 
+</div>
+</div>
+<div class="image-container">
+<%= image_tag "home2.png", alt: "Image 2" %>
+<div class="image-overlay"> 
+<div class="text-container2" style="background-color:gray; padding:25px;  margin-top:320px;">
+<h1>   From Initial Contact to Successful Project Assignment </h1>
+<p>Explore and earn royalties by partnering with us on impactful projects.</p>
+</div> 
+</div>
+</div>
+</div>
+
+
+
+<div class="hero-section">
+<div class="hero-image"  >
+<%= image_tag "cta1.png", alt: "Grey Box Image" %>
+<div class="hero-overlay">  
+  <div class="hero-content">
+    <h1 style="color:white !important; margin-left:120px !important; margin-top:10px !important ; margin-bottom:80px !important;" > Transform Your Organization with BRICStech </h1>
+
+
+    <div class="text-container2" style="background-color:#FFFFF2; padding:25px; margin-left:130px">
+  
+  <p>Empowering organizations, businesses, and communities with precision- crafted solutions that drive progress, success, security, and sustainable growth. Get in touch to find the right solution for you!</p>
+</div> 
+
+    <div class="hero-buttons" style="padding-left:150px !important ; padding-top:30px !important; ">
+      <a href="#" class="btn btn-outline-dark-red " style="background-color:#FFFFF2 !important; color:#19180A !important ;  border-color: #19180A !important;">Learn more</a>
+      <a href="<%= contactt_path %>" class="btn btn-filled-dark-red " style="border-color: #19180A !important;">Get In Touch</a>
+    </div>
+  </div>
+</div>  
+</div>
+</div>
+
+
+<div class="two-images-section">
+<div class="image-container">
+<%= image_tag "home1.png", alt: "Image 1" %>
+<div class="image-overlay"> 
+ 
+<div class="text-container2" style="background-color:gray; padding:25px;  margin-top:320px;">
+  <h1>  Experience Scalable Applications with BRICStech </h1>
+<p>Our innovative solutions empower you to thrive in a digital world.</p>
+</div> 
+</div>
+</div>
+<div class="image-container">
+<%= image_tag "home3.png", alt: "Image 2" %>
+<div class="image-overlay"> 
+<div class="text-container2" style="background-color:gray; padding:25px;  margin-top:320px;">
+<h1>   From Concept to Deployment We’ve Got You Covered </h1>
+<p>
+Our team transform your vision into reality, guiding you from concept to deployment.</p>
+</div> 
+</div>
+</div>
+</div>
+
+
+<div class="cta-section">  
+<div class="cta-content">
+<p>Looking for a Custom Software Solution? <a href="#">Get In touch</a></p>
+</div>
+</div>
+
+
+<div class="rowdisplay">
+
+<div class="signup-section" style="padding-left:70px; padding-top:100px; padding-bottom:150px;">
+<div class="signup-content" style=" border: 2px solid #53131E;">
+<div class="logo-container">
+  <%= image_tag "logo2.png", alt: "BRICStech Logo" %>
+  <div class="text-container">
+  <h3>BRICStech</h3>
+</div>
+</div>
+<div class="text-container">
+  <h2 style="font-weight:bold;">Discover the perfect<br> BRICStech Solution!</h2>
+</div>
+
+<div class="button-container">
+
+  <a href="#" class="btn btn-outline-dark-red btn-rounded"style="background-color:#FFFFF2 !important; color:#19180A !important ;  border-color: #19180A !important;">Innovation Lab</a>
+</div>
+<div class="login-link-wrapper" style="background-color:#53131E"> 
+<div class="login-link">
+  <p>Already know what your looking for? <a href="#">Get In Touch.</a></p>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="signup-section" style="padding-right:70px ;padding-top:100px; padding-bottom:150px;">
+<div class="signup-content">
+<div class="logo-container">
+  <%= image_tag "logo2.png", alt: "BRICStech Logo" %>
+  <div class="text-container">
+  <h3>BRICStech</h3>
+</div>
+</div>
+<div class="text-container">
+  <h2 style="font-weight:bold;">Built by you,<br> Powered by BRICStech</h2>
+</div>
+
+<div class="button-container">
+  
+<a href="#" class="btn btn-outline-dark-red btn-rounded"style="background-color:#A30000 !important; color:white !important ;  border-color: #19180A !important;">Sign Up</a>
+</div>
+<div class="login-link-wrapper"> 
+<div class="login-link">
+  <p>Already have an account? <a href="#">Log In.</a></p>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<footer>
+
+<div class="footer-content">
+  <div class="footer-section">
+    <h6>Products</h6>
+    <ul class="footer-list">
+      <li><a href="#">What's New</a></li>
+      <li><a href="#">Demos</a></li>
+      <li><a href="#">Case Studies</a></li>
+    </ul>
+  </div>
+  <div class="footer-section">
+    <h6>Company</h6>
+    <ul class="footer-list">
+      <li><a href="#">Home</a></li>
+      <li><a href="<%= aboutt_path %>" >About Us</a></li>
+      <li><a href="#">Innovation Lab</a></li>
+    </ul>
+  </div>
+  <div class="footer-section">
+    <h6>Support</h6>
+    <ul class="footer-list">
+      <li><a href="#">FAQs</a></li>
+      <li><a href="<%= contactt_path %>">Contact</a></li>
+    </ul>
+  </div>
+  <div class="footer-section">
+    <h6>For Clients</h6>
+    <ul class="footer-list">
+      <li><a href="#">Get In Touch</a></li>
+      <li><a href="#">Solutions</a></li>
+      <li><a href="#">Customer Center</a></li>
+    </ul>
+  </div>
+  <div class="footer-section">
+    <h6>For Partners</h6>
+    <ul class="footer-list">
+      <li><a href="#">Partner Portal</a></li>
+      <li><a href="#">Community Forum</a></li>
+      <li><a href="#">Library</a></li>
+      <li><a href="#">BRICStech Network</a></li>
+      <li><a href="#">Log In</a></li>
+      <li><a href="#">Sign Up</a></li>
+    </ul>
+  </div>
+  <div class="footer-section">
+  <h6>For Staff</h6>
+  <ul class="footer-list">
+    <li><a href="#">Community Forum</a></li>
+    <li><a href="#">Library</a></li>
+    <li><a href="#">Log In</a></li>
+  </ul>
+</div>
+
+<div class="footer-section">
+<h6>Connect</h6>
+<ul class="footer-list">
+  <li><a href="#">LinkedIn</a></li>
+  <li><a href="#">Instagram</a></li>
+  <li><a href="#">info@brics.tech</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom-inner">
+<div class="copyright">
+   © BRICStech L.L.C All Rights Reserved 2025 
+</div>
+<div class="copyright">
+<a href="#" class="footer-link" >Privacy Policy</a>
+<a href="#" class="footer-link ">Terms & Conditions</a>
+</div>
+</div> 
+</div>
+</footer>

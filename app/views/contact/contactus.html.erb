@@ -1,0 +1,668 @@
+<style>
+ 
+
+
+.fix-navbar {
+  display: inline-flex !important;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none; 
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  
+}
+
+
+.navbar-brand {
+
+  display: inline-flex !important;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none; 
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+
+.fix-navbar  img {
+  margin-right: 10px;
+  width: 100px;
+  height: auto;
+}
+
+.fix-nav .nav-link {
+  padding: 8px 15px;
+  color: #19180A;
+  font-family: 'Figtree', sans-serif;
+}
+
+.fix-nav .dropdown-item {
+  color: #333;
+  font-family: 'Figtree' , sans-serif ;
+}
+
+.btn {
+  padding: 8px 15px;
+  font-size: 13px;
+  font-family: 'Figtree' , sans-serif;
+}
+
+/* Center the navbar content */
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fix-collapse {
+  justify-content: center;
+  flex-grow: 0;
+}
+
+.fix-nav {
+  margin: 0 auto;
+}
+
+.fix-nav .nav-item {
+  margin: 0 5px;
+  
+}
+.d-flex {
+  gap: 10px;
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+  border: none;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Rounded, Dark Blue Buttons */
+.btn-rounded {
+  border-radius: 20px;
+  color: white !important;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+
+.btn-dark-blue {
+  background-color: #226F54;
+  border-color: #226F54 !important;
+  font-size:14px;
+  font-family: 'Figtree' , sans-serif;
+}
+.btn-dark-blue2 {
+  background-color: #A30000;
+  border-color: #A30000 !important;
+  font-family: 'Figtree' , sans-serif;
+  font-size:14px;
+}
+
+.btn-dark-blue:hover { /* Hover color for book a demo button */ 
+  background-color: #226F54 !important; 
+  border-color: #226F54 !important; 
+}
+.btn-dark-blue2:hover {  /* Hover color for sign up and login buttons */ 
+  background-color: #A30000 !important; 
+  border-color: #A30000 !important; 
+}
+
+.btn-outline-dark-red { /*  the color of outline buttons */ 
+  color: #53131E !important; 
+  border-color: #53131E !important;
+  border-radius: 20px;
+  font-size:15px;
+  font-family: 'Figtree', sans-serif;
+}
+
+.btn-outline-dark-red :hover { /*  the hover color of outline buttons */ 
+  background-color: white;
+  color: white;
+  border-color: #53131E !important;
+}
+
+.btn-filled-dark-red { /*  the color of outline buttons */ 
+color: white; 
+background-color:#A30000 !important;
+border-color: #53131E !important;
+border-radius: 20px;
+font-size:15px;
+font-family: 'Figtree' , sans-serif;
+}
+
+.btn-filled-dark-red:hover { /*  the hover color of outline buttons */ 
+background-color: white;
+color: white;
+border-color: #53131E !important;
+}
+
+
+
+/* Horizontal Dropdown Menu Styling */
+.fix-nav.horizontal-dropdown {
+  display: flex;
+  justify-content: center;
+  list-style: none; /* Remove bullet points */
+}
+
+.fix-nav.horizontal-dropdown .nav-item {
+  position: relative;
+
+}
+
+.fix-nav.horizontal-dropdown .dropdown-toggle {
+  padding: 8px 15px;
+  text-decoration: none; /* Remove underlines */
+}
+
+
+
+
+
+.fix-nav.horizontal-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: none;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+  z-index: 1000;
+  min-width: 100%;
+  text-align: left;
+  list-style: none; /* Remove bullet points from dropdown */
+  padding: 0; /* Remove default padding from dropdown list */
+}
+
+.fix-nav.horizontal-dropdown .dropdown-item {
+  padding: 8px 15px;
+  color: #226F54;
+  display: block;
+  clear: both;
+  white-space: nowrap;
+  font-size: 13px; 
+  text-decoration: none; /* Remove underlines from dropdown items */
+  font-family: 'Figtree', sans-serif;
+}
+
+.fix-nav.horizontal-dropdown .nav-item:hover .dropdown-menu,
+.fix-nav.horizontal-dropdown .nav-item .dropdown-menu:hover {
+  display: block;
+}
+
+/* Remove line from first word next to logo */
+.fix-nav.horizontal-dropdown .nav-item:first-child .nav-link {
+  border-left: none; /* Remove left border */
+}
+
+.fix-navbar .brand-text { /* New style for the text */
+  color: #53131E; 
+  font-size: 24px; /* Increased font size (adjust as needed) */
+  text-decoration: none; /* Remove underline */
+  margin-left: 0px; /* Add some space between logo and text */
+  font-family: 'Ador Hairline Bold', serif;
+  font-weight: bold;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-filled-dark-red { /*  the color of outline buttons */ 
+color: white; 
+background-color:#A30000 !important;
+border-radius: 25px;
+font-size:18px;
+font-weight:revert !important;
+font-family: 'Figtree' , sans-serif;
+text-decoration: none; /* Remove underline from link */
+
+}
+
+.btn-filled-dark-red:hover { /*  the hover color of outline buttons */ 
+background-color: white;
+color: white;
+
+}
+
+.btn-rounded {
+  border-radius: 25px;
+  color: white !important;
+  padding: 8px 20px;
+  text-decoration: none !important;
+  
+
+}
+
+.home-section {
+padding-bottom:20px;
+padding-top:60px;
+
+}
+
+.home-content {
+display: flex;
+align-items: flex-start; /* Key change: Align items to the top */
+max-width: 1200px;
+margin: 0 auto;
+
+}
+
+.home-text {
+flex: 1; /* Allow text to take up available space */
+font-family: 'Figtree', sans-serif;
+padding-right:90px;
+font-family: 'Figtree' , sans-serif;
+}
+
+.home-text h1 {
+font-size: 40px; /* Adjust as needed */
+margin-bottom: 10px;
+color: #A30000;
+font-weight: bold;
+font-family: 'Figtree' , sans-serif;
+}
+.home-text2 {
+flex: 1; /* Allow text to take up available space */
+font-family: 'Figtree', sans-serif;
+padding-right:90px;
+font-family: 'Figtree' , sans-serif;
+}
+
+.home-text2 h1 {
+font-size: 40px; /* Adjust as needed */
+margin-bottom: 20px;
+color: #53131E;
+font-weight: bold;
+font-family: 'Figtree' , sans-serif;
+}
+
+.home-text2 p {
+margin-bottom: 50px;
+font-family: 'Figtree' , sans-serif;
+font-size: 1.2rem; /* Adjust as needed */
+}
+.sub-text {
+margin-bottom: 20px;
+font-family: 'Figtree', sans-serif;
+}
+
+
+.home-text p {
+font-size: 1.2rem; /* Adjust as needed */
+line-height: 1.6; /* Improve readability */
+margin-bottom: 40px;
+color:#19180A;
+font-family: 'Figtree', sans-serif;
+}
+
+.home-buttons {
+display: flex;
+gap: 10px;
+}
+
+.home-image {
+flex: 1; /* Allow image to take up available space */
+padding-bottom:30px;
+width:10px ;
+height: 50px;
+padding-left:90px;
+}
+
+.home-image img {
+width: 450px  ; /* Image will be 80% of its container s width */
+height: 450px;
+padding-bottom:10px;
+margin-bottom: 10px;
+border-radius: 0 !important;
+}
+
+.contact-button {
+color: #051C38 !important; /* Dark blue color */
+}
+
+
+.container {
+    width:550px; 
+    height:600px;
+  border: 2px solid black; /* Black border */
+  border-radius: 30px; /* Rounded corners */
+#   width: fit-content; /* Adjust as needed */
+  overflow: hidden; /* Prevents image from overflowing */
+  display: flex;
+  flex-direction: column; /* Arranges items vertically */
+  align-items: center; /* Centers items horizontally */
+  padding: 2.5px; /* Adds padding inside the container */
+  padding-bottom:3px;
+#   padding-right:100px;
+margin-right:800px;
+}
+
+
+.container img {
+width: 539.4px  ; /* Image will be 80% of its container s width */
+height: 450px;
+padding-bottom:2px;
+
+padding-left:1px;
+padding-right:1px;
+border-radius: 30px; /* Slightly rounded corners */
+}
+
+.buttons {
+  display: flex; /* Arranges buttons horizontally */
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 3px; /* Adds space between buttons */
+  width: 100%;
+}
+
+.button {
+  background-color: #134611; /* Green background */
+  color: white; /* White text */
+  border: none; /* Removes default button border */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 15px; /* Slightly rounded corners */
+  text-align: start; /* Centers text inside button */
+  font-family: 'Figtree', sans-serif; /* Use Figtree font */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  width: 100%; /* Buttons take full width */
+  height:65px;
+  box-sizing: border-box; /* Prevents padding from affecting width */
+}
+
+.button:hover {
+  background-color: #1A5A44; /* Darker green on hover */
+}
+
+
+
+.form-container {
+  border: 2px solid #19180A; /* Light gray border color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 30px; /* Padding inside the container */
+  width: 80%; /* Adjust width as needed */
+  height: 500px;
+  margin-left: 165px; /* Center the container */
+  font-family: sans-serif; /* Use a sans-serif font */
+  background-color: #FFFFF2;; /* Very light gray background */
+}
+
+.form-container h2 {
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px;
+  color: #555; /* Darker gray heading color */
+  font-family: 'Figtree' , sans-serif;
+}
+.name-group {
+  display: flex; /* Arrange name fields side by side */
+  gap: 20px; /* Space between name fields */
+}
+
+.form-group {
+  margin-bottom: 15px;
+  padding-top:40px;
+  width: 100%; /* Make each form group take full width within name-group */
+}
+
+
+label {
+  display: block; /* Make labels stack on top of inputs */
+  margin-bottom: 5px;
+  color: #19180A; /* Darker gray label color */
+  font-family: 'Figtree' , sans-serif;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%; /* Full width for inputs */
+  padding: 5px 0; /* Adjust vertical padding */
+  border: none; /* Remove all borders */
+  border-bottom: 1px solid #19180A; /* Add bottom border */
+  box-sizing: border-box;
+  font-size: 16px;
+  background: transparent; /* Make background transparent */
+  font-family: 'Figtree' , sans-serif;
+}
+
+
+input[type="message"] {
+  /* ... other styles ... */
+  padding: 30px; /* Add 10px padding to all sides */
+  font-family: 'Figtree' , sans-serif;
+
+}
+
+button {
+
+color: white; 
+background-color:#134611 !important;
+border-color: #53131E !important;
+padding: 10px 15px;
+ border-radius: 25px;
+cursor: pointer;
+font-size: 16px;
+font-size:15px;
+font-family: 'Figtree' , sans-serif;
+
+}
+
+.button:hover { /*  the hover color of outline buttons */ 
+background-color: white;
+color: white;
+border-color: #53131E !important;
+}
+
+
+
+
+input::placeholder {
+  color: #aaa; /* Light gray placeholder text */
+  font-style: italic; /* Italic placeholder text */
+  font-family: 'Figtree' , sans-serif;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+.smallpadding{
+padding-top:50px;
+}
+
+
+.agreement {
+  display: flex; /* Arrange items horizontally */
+  align-items: center; /* Vertically align items */
+  justify-content: center; /* Distribute space between items */
+  margin-top: 20px; /* Add some top margin */
+  
+}
+
+.agreement label {
+  margin: 0; /* Remove default margin from label */
+  padding:0;
+  vertical-align:middle;
+  user-select: none; /* Prevent text selection */
+  color: #555; /* Darker gray text color */
+padding-right:550px;
+font-family: 'Figtree' , sans-serif;
+
+}
+
+.agreement a {
+  color: #19180A; /* black link color */
+  text-decoration: underline; 
+  font-weight:bold;
+  font-family: 'Figtree' , sans-serif;
+}
+
+# .agreement a:hover {
+#   text-decoration: underline; /* Add underline on hover */
+# }
+
+.agreement button {
+  background-color: #A30000; /* Red button color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.agreement button:hover {
+  background-color: #8A0000; /* Darker red on hover */
+}
+
+.agreement input[type="checkbox"] {
+  appearance: auto;
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+
+.padding{
+    padding-top:200px;
+}
+
+
+ </style>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light" data-turbo-permanent>
+<div class="container-fluid">
+
+  <%= link_to root_path, class: "fix-navbar" do %>
+
+    <img style="width:150px;" src="<%= asset_path 'logo2.png' %>" alt="BRICStech Logo">
+    <span class="brand-text" style="font-size:40px;">BRICStech</span>
+<% end %>
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    <ul class="navbar-nav mx-auto horizontal-dropdown">
+      <%= render partial: 'shared/nav_links' %>
+    </ul>
+  </div>
+  <div class="d-flex">
+    <a href="#" class="btn btn-dark-blue btn-rounded me-2">Book a Demo</a>
+    <a href="<%= login_path %>" class="btn btn-dark-blue2 btn-rounded me-2">Log In</a>
+  </div>
+</div>
+</nav>
+
+
+<div class="home-section">
+<div class="home-content">
+<div class="home-text">
+<h1>Let's Connect! </h1>
+<p>
+BRICStech is your gateway to transformative solutions, <br>
+explore and connect with us to shape the future together.
+
+</p>
+
+</div>
+<div class="home-image">
+<%= image_tag "woman.png", alt: "Grey Box Image" %>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="container">
+<%= image_tag "map.png", alt: "Grey Box Image" %>
+  <div class="buttons">
+    <button class="button">Location</button>
+    <button class="button">Phone number</button>
+    <button class="button">info@brics.tech</button>
+  </div>
+</div>
+
+
+
+<div class="home-section">
+<div class="home-content">
+<div class="home-text2">
+<h1>Send us a message</h1>
+<p>
+Reach out to us using the contact information below or fill out the <br>
+form, and our team will get back to you as soon as possible.
+</p>
+</div>
+</div>
+</div>
+
+
+<div class="form-container">
+  <form action="#" method="post" id ="myForm">
+    <div class="name-group">
+      <div class="form-group">
+        <label for="firstName">First name*</label>
+        <input type="text" id="firstName" name="firstName" required>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last name</label>
+        <input type="text" id="lastName" name="lastName">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email">Email address*</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Messages*</label>
+      <div class="smallpadding">
+      <input type="text" id="message" name="message" placeholder="Type your message here">
+      </div>
+    </div>
+  </form>
+
+</div> 
+
+<div class="agreement">
+  <input type="checkbox" id="agreement" name="agreement" required>
+  <label for="agreement">By filling out this form you agree to our <a href="#">privacy notice</a>.</label>
+
+  <a href="#" class="btn btn-filled-dark-red btn-rounded" id="submitButton">Submit</a>
+    <div id="errorMessage" style="color: red; display: none;">You need to fill in the required data.</div>
+</div>
+
+
+<div class="padding">
+</div>
+<script>
+  const submitButton = document.getElementById('submitButton');
+
+  submitButton.addEventListener('click', function(event) {
+    // Prevent default form submission (if you're not actually submitting a form yet)
+    event.preventDefault(); 
+
+    // Display the message (you can customize this)
+    alert("Thank you for reaching out. Our team will get back to you as soon as possible");
+
+    // Optional: You can redirect the user or perform other actions here
+    // window.location.href = "thankyou.html"; // Example redirect
+  });
+</script>

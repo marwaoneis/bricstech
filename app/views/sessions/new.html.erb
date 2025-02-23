@@ -1,0 +1,409 @@
+<style>
+
+
+.fix-navbar {
+  display: inline-flex !important;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none; 
+  pointer-events: auto !important;
+  cursor: pointer !important;
+
+}
+
+
+.navbar-brand {
+
+  display: inline-flex !important;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none; 
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+
+.fix-navbar  img {
+  margin-right: 10px;
+  width: 100px;
+  height: auto;
+}
+
+.fix-nav .nav-link {
+  padding: 8px 15px;
+  color: #19180A;
+  font-family: 'Figtree', sans-serif;
+}
+
+.fix-nav .dropdown-item {
+  color: #333;
+  font-family: 'Figtree' , sans-serif ;
+}
+
+.btn {
+  padding: 8px 15px;
+  font-size: 13px;
+  font-family: 'Figtree' , sans-serif;
+}
+
+/* Center the navbar content */
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fix-collapse {
+  justify-content: center;
+  flex-grow: 0;
+}
+
+.fix-nav {
+  margin: 0 auto;
+}
+
+.fix-nav .nav-item {
+  margin: 0 5px;
+  
+}
+.d-flex {
+  gap: 10px;
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+  border: none;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Rounded, Dark Blue Buttons */
+.btn-rounded {
+  border-radius: 20px;
+  color: white !important;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+
+.btn-dark-blue {
+  background-color: #226F54;
+  border-color: #226F54 !important;
+  font-size:14px;
+  font-family: 'Figtree' , sans-serif;
+}
+.btn-dark-blue2 {
+  background-color: #A30000;
+  border-color: #A30000 !important;
+  font-family: 'Figtree' , sans-serif;
+  font-size:14px;
+}
+
+.btn-dark-blue:hover { /* Hover color for book a demo button */ 
+  background-color: #226F54 !important; 
+  border-color: #226F54 !important; 
+}
+.btn-dark-blue2:hover {  /* Hover color for sign up and login buttons */ 
+  background-color: #A30000 !important; 
+  border-color: #A30000 !important; 
+}
+
+.btn-outline-dark-red { /*  the color of outline buttons */ 
+  color: #53131E !important; 
+  border-color: #53131E !important;
+  border-radius: 20px;
+  font-size:15px;
+  font-family: 'Figtree', sans-serif;
+}
+
+.btn-outline-dark-red :hover { /*  the hover color of outline buttons */ 
+  background-color: white;
+  color: white;
+  border-color: #53131E !important;
+}
+
+.btn-filled-dark-red { /*  the color of outline buttons */ 
+color: white; 
+background-color:#A30000 !important;
+border-color: #53131E !important;
+border-radius: 20px;
+font-size:15px;
+font-family: 'Figtree' , sans-serif;
+}
+
+.btn-filled-dark-red:hover { /*  the hover color of outline buttons */ 
+background-color: white;
+color: white;
+border-color: #53131E !important;
+}
+
+
+
+/* Horizontal Dropdown Menu Styling */
+.fix-nav.horizontal-dropdown {
+  display: flex;
+  justify-content: center;
+  list-style: none; /* Remove bullet points */
+}
+
+.fix-nav.horizontal-dropdown .nav-item {
+  position: relative;
+
+}
+
+.fix-nav.horizontal-dropdown .dropdown-toggle {
+  padding: 8px 15px;
+  text-decoration: none; /* Remove underlines */
+}
+
+
+
+
+
+.fix-nav.horizontal-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: none;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+  z-index: 1000;
+  min-width: 100%;
+  text-align: left;
+  list-style: none; /* Remove bullet points from dropdown */
+  padding: 0; /* Remove default padding from dropdown list */
+}
+
+.fix-nav.horizontal-dropdown .dropdown-item {
+  padding: 8px 15px;
+  color: #226F54;
+  display: block;
+  clear: both;
+  white-space: nowrap;
+  font-size: 13px; 
+  text-decoration: none; /* Remove underlines from dropdown items */
+  font-family: 'Figtree', sans-serif;
+}
+
+.fix-nav.horizontal-dropdown .nav-item:hover .dropdown-menu,
+.fix-nav.horizontal-dropdown .nav-item .dropdown-menu:hover {
+  display: block;
+}
+
+/* Remove line from first word next to logo */
+.fix-nav.horizontal-dropdown .nav-item:first-child .nav-link {
+  border-left: none; /* Remove left border */
+}
+
+.fix-navbar .brand-text { /* New style for the text */
+  color: #53131E; 
+  font-size: 24px; /* Increased font size (adjust as needed) */
+  text-decoration: none; /* Remove underline */
+  margin-left: 0px; /* Add some space between logo and text */
+  font-family: 'Ador Hairline Bold', serif;
+  font-weight: bold;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.two-images-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    }
+    
+    .image-container {
+    width: 45%;
+    height: 800px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Needed for absolute positioning of overlay */
+    }
+    
+    .image-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    }
+    
+    .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 12px; /* Adjust padding as needed */
+
+    }
+    
+    .image-text {
+    text-align: bottom;
+    padding-top:500px; 
+    color: #19180A  !important;
+    font-family: 'Figtree', sans-serif;
+    margin-bottom:20px;
+    
+    }
+    
+    .image-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color:#19180A  !important;
+    font-family: 'Figtree', sans-serif;
+    /* padding-bottom:50px; */
+    
+    }
+    .image-text h1 {
+        font-size: 2.5rem;
+        line-height: 1.6;
+       
+        font-family: 'Figtree', sans-serif;
+        color:#53131E !important;
+font-weight: bold;
+        
+        }
+
+        .hero-buttons {
+display: flex;
+justify-content: flex-start; /* Center buttons horizontally */
+align-self: center; /* Center buttons horizontally */
+margin-bottom: 10px; /* Add space at the bottom */
+
+}
+
+.btn-filled-dark-red { /*  the color of outline buttons */ 
+color: white; 
+background-color:#A30000 !important;
+border-color: #53131E !important;
+border-radius: 20px;
+font-size:15px;
+font-family: 'Figtree' , sans-serif;
+
+}
+
+.btn-filled-dark-red:hover { /*  the hover color of outline buttons */ 
+background-color: #A30000;
+color: white !important;
+border-color: #53131E !important;
+}
+    
+    /* Responsive adjustments (example) */
+    @media (max-width: 768px) {
+    .two-images-section {
+    flex-direction: column;
+
+    }
+    
+    .image-container {
+    width: 90%;
+    margin: 20px auto;
+    }
+    } 
+    </style>
+
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light" data-turbo-permanent>
+    <div class="container-fluid">
+      <a class="navbar-brand"  href="/" >
+        <img style="width:150px;" src="<%= asset_path 'logo2.png' %>" alt="BRICStech Logo">
+        <span class="brand-text" style="font-size:40px;">BRICStech</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav mx-auto horizontal-dropdown">
+          <%= render partial: 'shared/nav_links' %>
+        </ul>
+      </div>
+      <div class="d-flex">
+        <a href="#" class="btn btn-dark-blue btn-rounded me-2">Book a Demo</a>
+    
+        <a href="<%= login_path %>" class="btn btn-dark-blue2 btn-rounded me-2">Log In</a>
+      </div>
+    </div>
+    </nav>
+    
+
+
+
+<div class="two-images-section">
+<div class="image-container">
+<%= image_tag "place.png", alt: "Image 1" %>
+<div class="image-overlay"> 
+  <div class="image-text">
+  <h1> BRICStech Partners Portal </h1>
+    <p>brics.tech.partners-portal.com</p>
+  </div>
+  <div class="hero-buttons">
+  <a href="#"  class="btn btn-filled-dark-red ">Log In to Partners Portal</a>
+ 
+</div>
+
+<p>or sign up</p>
+
+
+</div>
+</div>
+<div class="image-container">
+<%= image_tag "place.png", alt: "Image 2" %>
+<div class="image-overlay"> 
+  <div class="image-text" style="padding-top:480px; padding-right:70px;">
+  <h1> BRICStech Staff Portal   </h1>
+    <p>brics.tech.staff-portal.com</p>
+  </div>
+  <div class="hero-buttons">
+  <a href="<%= stafflogin_path %>" class="btn btn-filled-dark-red ">Log In to Staff Portal </a>
+</div>
+<a></a>
+<p></p>
+
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

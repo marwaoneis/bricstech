@@ -1,0 +1,26 @@
+development:
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: 5
+  username: bricstech_user
+  password: password123
+  host: localhost
+  database: bricstech_db
+
+test:
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: 5
+  username: bricstech_user
+  password: password123
+  host: localhost
+  database: bricstech_test
+
+production:
+  adapter: mysql2
+  encoding: utf8mb4
+  pool: 5
+  username: bricstech_user
+  password: password123
+  host: localhost
+  database: bricstech_production
