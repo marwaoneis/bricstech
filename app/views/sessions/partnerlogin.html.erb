@@ -1,0 +1,503 @@
+<style>
+
+
+.fix-navbar {
+  display: inline-flex !important;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none; 
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  
+}
+
+
+.navbar-brand {
+
+  display: inline-flex !important;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none; 
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+
+.fix-navbar  img {
+  margin-right: 10px;
+  width: 100px;
+  height: auto;
+}
+
+.fix-nav .nav-link {
+  padding: 8px 15px;
+  color: #19180A;
+  font-family: 'Figtree', sans-serif;
+}
+
+.fix-nav .dropdown-item {
+  color: #333;
+  font-family: 'Figtree' , sans-serif ;
+}
+
+.btn {
+  padding: 8px 15px;
+  font-size: 13px;
+  font-family: 'Figtree' , sans-serif;
+}
+
+/* Center the navbar content */
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fix-collapse {
+  justify-content: center;
+  flex-grow: 0;
+}
+
+.fix-nav {
+  margin: 0 auto;
+}
+
+.fix-nav .nav-item {
+  margin: 0 5px;
+  
+}
+.d-flex {
+  gap: 10px;
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+  border: none;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Rounded, Dark Blue Buttons */
+.btn-rounded {
+  border-radius: 20px;
+  color: white !important;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+
+.btn-dark-blue {
+  background-color: #226F54;
+  border-color: #226F54 !important;
+  font-size:14px;
+  font-family: 'Figtree' , sans-serif;
+}
+.btn-dark-blue2 {
+  background-color: #A30000;
+  border-color: #A30000 !important;
+  font-family: 'Figtree' , sans-serif;
+  font-size:14px;
+}
+
+.btn-dark-blue:hover { /* Hover color for book a demo button */ 
+  background-color: #226F54 !important; 
+  border-color: #226F54 !important; 
+}
+.btn-dark-blue2:hover {  /* Hover color for sign up and login buttons */ 
+  background-color: #A30000 !important; 
+  border-color: #A30000 !important; 
+}
+
+.btn-outline-dark-red { /*  the color of outline buttons */ 
+  color: #53131E !important; 
+  border-color: #53131E !important;
+  border-radius: 20px;
+  font-size:15px;
+  font-family: 'Figtree', sans-serif;
+}
+
+.btn-outline-dark-red :hover { /*  the hover color of outline buttons */ 
+  background-color: white;
+  color: white;
+  border-color: #53131E !important;
+}
+
+.btn-filled-dark-red { /*  the color of outline buttons */ 
+color: white; 
+background-color:#A30000 !important;
+border-color: #53131E !important;
+border-radius: 20px;
+font-size:15px;
+font-family: 'Figtree' , sans-serif;
+}
+
+.btn-filled-dark-red:hover { /*  the hover color of outline buttons */ 
+background-color: white;
+color: white;
+border-color: #53131E !important;
+}
+
+
+
+/* Horizontal Dropdown Menu Styling */
+.fix-nav.horizontal-dropdown {
+  display: flex;
+  justify-content: center;
+  list-style: none; /* Remove bullet points */
+}
+
+.fix-nav.horizontal-dropdown .nav-item {
+  position: relative;
+
+}
+
+.fix-nav.horizontal-dropdown .dropdown-toggle {
+  padding: 8px 15px;
+  text-decoration: none; /* Remove underlines */
+}
+
+
+
+
+
+.fix-nav.horizontal-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: none;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+  z-index: 1000;
+  min-width: 100%;
+  text-align: left;
+  list-style: none; /* Remove bullet points from dropdown */
+  padding: 0; /* Remove default padding from dropdown list */
+}
+
+.fix-nav.horizontal-dropdown .dropdown-item {
+  padding: 8px 15px;
+  color: #226F54;
+  display: block;
+  clear: both;
+  white-space: nowrap;
+  font-size: 13px; 
+  text-decoration: none; /* Remove underlines from dropdown items */
+  font-family: 'Figtree', sans-serif;
+}
+
+.fix-nav.horizontal-dropdown .nav-item:hover .dropdown-menu,
+.fix-nav.horizontal-dropdown .nav-item .dropdown-menu:hover {
+  display: block;
+}
+
+/* Remove line from first word next to logo */
+.fix-nav.horizontal-dropdown .nav-item:first-child .nav-link {
+  border-left: none; /* Remove left border */
+}
+
+.fix-navbar .brand-text { /* New style for the text */
+  color: #53131E; 
+  font-size: 24px; /* Increased font size (adjust as needed) */
+  text-decoration: none; /* Remove underline */
+  margin-left: 0px; /* Add some space between logo and text */
+  font-family: 'Ador Hairline Bold', serif;
+  font-weight: bold;
+
+}
+
+
+
+
+
+
+
+
+.login-container {
+  background-color: #226F54; /* Light gray background */
+  display: flex;
+  /* justify-content: last;
+  align-items: center; */
+  padding-left: 52px;
+  padding-top: 5px;
+  padding-bottom:5px;
+  /* width:100%; */
+  height:600px !important;
+  border-radius:30px;
+  margin:40px;
+
+}
+
+.rowdisplay{
+  display: flex;
+  flex-direction: row; /* Arranges items vertically */
+}
+
+.login-form {
+  background-color: #FFFFF2;
+  margin-left: 543px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 550px; /* Adjust width as needed */
+    height:590px !important;
+        font-family: 'Figtree', sans-serif;
+    
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+    font-family: 'Figtree', sans-serif;
+}
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #666;
+    font-family: 'Figtree', sans-serif;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 0 15px; /* Slightly increased padding */
+  width: 400px;
+  margin: 4px auto; /* Centered horizontally with margin */
+  height: 40px;
+  box-sizing: border-box; /* Include padding and border in width/height */
+  background-color:white !important;
+}
+
+.input-icon {
+  margin-right: 10px;
+  color: #226F54;
+  font-size: 1.2rem; /* Adjust icon size */
+}
+
+.input-wrapper input {
+  border: none;
+  padding: 10px 0;
+  width: 100%;
+  height:100%;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 1rem; /* Adjust font size */
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px white inset !important; /* Change 'white' to your input background color */
+  transition: background-color 5000s ease-in-out 0s; /* Smooth transition for background color change */
+}
+
+.password-toggle {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  color: #999;
+  font-size: 1.2rem; /* Adjust icon size */
+    font-family: 'Figtree', sans-serif;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px !important;
+  margin-left:95px;
+  margin-right:78px;
+  color: grey;
+    font-family: 'Figtree', sans-serif;
+}
+.welcome-message {
+  color: white; /* Or your desired color */
+  font-size: 2.1rem; /* Adjust font size as needed */
+margin-top:500px;
+  font-family: 'Figtree', sans-serif;
+   font-weight: bold;
+  
+}
+
+.remember-forgot a {
+  color: grey;
+  text-decoration: none;
+    font-family: 'Figtree', sans-serif;
+}
+
+.login-button {   
+  background-color: #226F54;
+  color: white;
+  /* padding: 12px 50px; */
+  /* margin-top:50px; */
+  margin-left:80px;
+  /* margin-right:40px; */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 400px;
+  height:40px;
+    font-family: 'Figtree', sans-serif;
+}
+
+.login-button:hover {
+  background-color: #226F54;
+    font-family: 'Figtree', sans-serif;
+}
+
+.signup-button {   
+  background-color: white;
+ 
+  /* padding: 12px 50px; */
+  /* margin-top:50px; */
+  margin-left:80px;
+  /* margin-right:40px; */
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 400px;
+  height:40px;
+    font-family: 'Figtree', sans-serif; 
+    border: 1px solid #ccc;
+  border-radius: 30px;
+    
+}
+
+.login-button:hover {
+  background-color: white;
+    font-family: 'Figtree', sans-serif;
+}
+
+
+.or-line {
+  display: flex; /* Use flexbox for centering text */
+  align-items: center;
+  width: 100%; /* Make line take available width */
+  max-width: 400px; /* Adjust max width as needed */
+  margin: 2px auto; /* Center the line horizontally */
+  color: #888; /* Gray color for the line */
+}
+
+.or-line::before,
+.or-line::after {
+  content: "";
+  flex: 1; /* Make lines take equal space */
+  height: 1px;
+  background-color: #ccc; /* Light gray line color */
+}
+
+.or-line span {
+  padding: 0 10px; /* Add padding around "Or" text */
+  white-space: nowrap; /* Prevent "Or" from wrapping */
+}
+
+    </style>
+
+
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light" data-turbo-permanent>
+    <div class="container-fluid">
+      <a class="navbar-brand"  href="/" >
+        <img style="width:150px;" src="<%= asset_path 'logo2.png' %>" alt="BRICStech Logo">
+        <span class="brand-text" style="font-size:40px;" >BRICStech</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav mx-auto horizontal-dropdown">
+          <%= render partial: 'shared/nav_links' %>
+        </ul>
+      </div>
+      <div class="d-flex">
+        <a href="#" class="btn btn-dark-blue btn-rounded me-2">Book a Demo</a>
+
+        <a href="<%= login_path %>" class="btn btn-dark-blue2 btn-rounded me-2">Log In</a>
+      </div>
+    </div>
+    </nav>
+    
+
+<div class="login-container">
+<div class="welcome-message">Welcome.</div>
+  <div class="login-form">
+    <h2 style="padding-right:320px; padding-top:70px; font-weight: bold;" >Log in</h2>
+
+  <div class="input-group">
+
+  <div class="input-wrapper"> 
+    <span class="input-icon"><i class="fas fa-user"></i></span> 
+    <input type="text" id="username" name="username" placeholder="Username">
+  </div>
+
+</div>
+<div class="input-group">
+  <div class="input-wrapper">
+    <span class="input-icon"><i class="fas fa-lock"></i></span>
+    <input type="password" id="password" name="password" placeholder="Password">
+    <span class="password-toggle" id="togglePassword">
+      <i class="fas fa-eye" id="eyeIcon"></i>  
+      <i class="fas fa-eye-slash" id="eyeSlashIcon" style="display: none;"></i> 
+    </span>
+  </div>
+</div>
+<script>
+const passwordInput = document.getElementById('password');
+const togglePassword = document.getElementById('togglePassword');
+const eyeIcon = document.getElementById('eyeIcon');
+const eyeSlashIcon = document.getElementById('eyeSlashIcon');
+eyeIcon.style.display = 'none'; // Initially hide the open eye icon
+eyeSlashIcon.style.display = 'block'; // Initially show the closed eye icon
+
+togglePassword.addEventListener('click', function() {
+  const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+  passwordInput.setAttribute('type', type);
+
+  // Toggle eye icons (Corrected Logic)
+  eyeIcon.style.display = type === 'text' ? 'block' : 'none'; // Show open eye when text is visible
+  eyeSlashIcon.style.display = type === 'text' ? 'none' : 'block'; // Show closed eye when text is visible
+});
+</script>
+
+    <div class="remember-forgot">
+      <label for="remember">
+        <input type="checkbox" id="remember" name="remember" style="color:grey;">
+        Remember Me
+      </label>
+      <a href="#">Forgot Password?</a>
+    </div>
+    <button type="submit" class="login-button">Log in</button>
+
+     <div class="or-line">
+    <span>Or</span>
+  </div> 
+  <button type="submit" class="signup-button">Sign up</button>
+
+
+  </div> 
+
+
+ 
+
+
+</div>
+
+
+
+
+
+

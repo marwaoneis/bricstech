@@ -1,0 +1,1036 @@
+
+
+/* Basic Styling */
+body {
+  min-height: 100vh; 
+  margin: 0 !important; /* Forcefully remove margins */
+padding: 0 !important; /* Forcefully remove padding */
+background-color:  #FFFFF2;
+}
+
+@font-face {
+font-family: 'Ador Hairline';
+src: url(asset_url('AdorHairline-Regular.ttf')) format('truetype'); /* Only TTF */
+/*   src: url(asset_url ('AdorHairline-Regular.ttf' ) ) format('truetype'); */
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'Ador Hairline Bold'; /* Unique name for the bold version */
+src: url(asset_url('AdorHairline-Bold.ttf')) format('truetype'); /* Path to the bold font file */
+/* src: url(asset_url('AdorHairline-Bold.ttf')) format('truetype');  Path to the bold font file */
+font-weight: bold; /* Or 700 */
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Figtree';
+src: url(asset-url('Figtree-ExtraBold.woff2')) format('woff2'),
+/* src: url('Figtree-ExtraBold.woff2') format('woff2'), */
+   /* url('Figtree-ExtraBold.woff') format('woff'), */
+      url(asset-url('Figtree-ExtraBold.woff')) format('woff'),
+   /* url('Figtree-ExtraBold.ttf')format('truetype'); */
+    url(asset-url('Figtree-ExtraBold.ttf')) format('truetype');
+    
+font-weight: 800;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'Figtree';
+/* src: url('Figtree-Regular.woff2') format('woff2'), */
+src: url(asset-url('Figtree-Regular.woff2')) format('woff2'),
+   /* url('Figtree-Regular.woff') format('woff'), */
+   url(asset-url('Figtree-Regular.woff')) format('woff'),
+   /* url('Figtree-Regular.ttf')format('truetype'); */
+  url(asset-url('Figtree-Regular.ttf')) format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+
+@font-face {
+font-family: 'Figtree Italic'; /* Unique name for the italic version */
+/* src: url('Figtree-Italic.woff2') format('woff2'), 
+   url('Figtree-Italic.woff') format('woff'),
+   url('Figtree-Italic.ttf') format('truetype'); */
+ src: url(asset_url('Figtree-Italic.woff2')) format('woff2'), 
+   url(asset_url('Figtree-Italic.woff')) format('woff'),
+   url(asset_url('Figtree-Italic.ttf')) format('truetype');
+
+font-weight: normal; /* Or whatever weight the italic version has */
+font-style: italic; /* This is what makes it italic */
+}
+@font-face {
+font-family: 'EB Garamond';
+/* src: url('EB_Garamond-Regular.woff2') format('woff2'),
+     url('EB_Garamond-Regular.woff') format('woff'),
+     url('EB_Garamond-Regular.ttf') format('truetype'); */
+
+      src: url(asset-url('EB_Garamond-Regular.woff2')) format('woff2'),
+     url(asset-url('EB_Garamond-Regular.woff')) format('woff'),
+     url(asset-url('EB_Garamond-Regular.ttf')) format('truetype'); 
+font-weight: normal;
+font-style: normal;
+}
+
+
+.navbar {
+  
+}
+
+
+
+
+.fix-navbar {
+  display: inline-flex !important;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none; 
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+
+.navbar-brand {
+  position: fixed;
+  display: inline-flex !important;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none; 
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+
+.fix-navbar  img {
+  margin-right: 10px;
+  width: 100px;
+  height: auto;
+}
+
+.fix-nav .nav-link {
+  padding: 8px 15px;
+  color: #19180A;
+  font-family: 'Figtree', sans-serif;
+}
+
+.fix-nav .dropdown-item {
+  color: #333;
+  font-family: 'Figtree' , sans-serif ;
+}
+
+.btn {
+  padding: 8px 15px;
+  font-size: 13px;
+  font-family: 'Figtree' , sans-serif;
+}
+
+/* Center the navbar content */
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fix-collapse {
+  justify-content: center;
+  flex-grow: 0;
+}
+
+.fix-nav {
+  margin: 0 auto;
+}
+
+.fix-nav .nav-item {
+  margin: 0 5px;
+  
+}
+.d-flex {
+  gap: 10px;
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+  border: none;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Rounded, Dark Blue Buttons */
+.btn-rounded {
+  border-radius: 20px;
+  color: white !important;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+
+.btn-dark-blue {
+  background-color: #226F54;
+  border-color: #226F54 !important;
+  font-size:14px;
+  font-family: 'Figtree' , sans-serif;
+}
+.btn-dark-blue2 {
+  background-color: #A30000;
+  border-color: #A30000 !important;
+  font-family: 'Figtree';
+}
+
+.btn-dark-blue:hover { /* Hover color for book a demo button */ 
+  background-color: #226F54 !important; 
+  border-color: #226F54 !important; 
+}
+.btn-dark-blue2:hover {  /* Hover color for sign up and login buttons */ 
+  background-color: #A30000 !important; 
+  border-color: #A30000 !important; 
+}
+
+.btn-outline-dark-red { /*  the color of outline buttons */ 
+  color: #53131E !important; 
+  border-color: #53131E !important;
+  border-radius: 20px;
+  font-size:15px;
+  font-family: 'Figtree', sans-serif;
+}
+
+.btn-outline-dark-red :hover { /*  the hover color of outline buttons */ 
+  background-color: white;
+  color: white;
+  border-color: #53131E !important;
+}
+
+.btn-filled-dark-red { /*  the color of outline buttons */ 
+color: white; 
+background-color:#A30000 !important;
+border-color: #53131E !important;
+border-radius: 20px;
+font-size:15px;
+font-family: 'Figtree' , sans-serif;
+}
+
+.btn-filled-dark-red:hover { /*  the hover color of outline buttons */ 
+background-color: white;
+color: white;
+border-color: #53131E !important;
+}
+
+
+
+/* Horizontal Dropdown Menu Styling */
+.fix-nav.horizontal-dropdown {
+  display: flex;
+  justify-content: center;
+  list-style: none; /* Remove bullet points */
+}
+
+.fix-nav.horizontal-dropdown .nav-item {
+  position: relative;
+
+}
+
+.fix-nav.horizontal-dropdown .dropdown-toggle {
+  padding: 8px 15px;
+  text-decoration: none; /* Remove underlines */
+}
+
+
+
+
+
+.fix-nav.horizontal-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: none;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+  z-index: 1000;
+  min-width: 100%;
+  text-align: left;
+  list-style: none; /* Remove bullet points from dropdown */
+  padding: 0; /* Remove default padding from dropdown list */
+}
+
+.fix-nav.horizontal-dropdown .dropdown-item {
+  padding: 8px 15px;
+  color: #226F54;
+  display: block;
+  clear: both;
+  white-space: nowrap;
+  font-size: 13px; 
+  text-decoration: none; /* Remove underlines from dropdown items */
+  font-family: 'Figtree', sans-serif;
+}
+
+.fix-nav.horizontal-dropdown .nav-item:hover .dropdown-menu,
+.fix-nav.horizontal-dropdown .nav-item .dropdown-menu:hover {
+  display: block;
+}
+
+/* Remove line from first word next to logo */
+.fix-nav.horizontal-dropdown .nav-item:first-child .nav-link {
+  border-left: none; /* Remove left border */
+}
+
+.fix-navbar .brand-text { /* New style for the text */
+  color: #53131E; 
+  font-size: 24px; /* Increased font size (adjust as needed) */
+  text-decoration: none; /* Remove underline */
+  margin-left: 0px; /* Add some space between logo and text */
+  font-family: 'Ador Hairline Bold', serif;
+  font-weight: bold;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar-brand {
+
+  display: inline-flex !important;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none; 
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+.fix-navbar {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.navbar-brand img {
+  margin-right: 1px;
+ 
+}
+
+.navbar-nav .nav-link {
+  padding: 8px 15px;
+  color: #19180A;
+  font-family: 'Figtree', sans-serif;
+}
+
+.navbar-nav .dropdown-item {
+  color: #333;
+  font-family: 'Figtree' , sans-serif ;
+}
+
+.btn {
+  padding: 8px 15px;
+  font-size: 13px;
+  font-family: 'Figtree' , sans-serif;
+}
+
+/* Center the navbar content */
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-collapse {
+  justify-content: center;
+  flex-grow: 0;
+}
+
+.navbar-nav {
+  margin: 0 auto;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 5px;
+  
+}
+.d-flex {
+  gap: 10px;
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+  border: none;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Rounded, Dark Blue Buttons */
+.btn-rounded {
+  border-radius: 20px;
+  color: white !important;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+
+.btn-dark-blue {
+  background-color: #226F54;
+  border-color: #226F54 !important;
+  font-size:14px;
+  font-family: 'Figtree' , sans-serif;
+}
+.btn-dark-blue2 {
+  background-color: #A30000;
+  border-color: #A30000 !important;
+  font-family: 'Figtree' , sans-serif;
+  font-size:14px;
+}
+
+.btn-dark-blue:hover { /* Hover color for book a demo button */ 
+  background-color: #226F54 !important; 
+  border-color: #226F54 !important; 
+}
+.btn-dark-blue2:hover {  /* Hover color for sign up and login buttons */ 
+  background-color: #A30000 !important; 
+  border-color: #A30000 !important; 
+}
+
+.btn-outline-dark-red { /*  the color of outline buttons */ 
+  color: #53131E !important; 
+  border-color: #53131E !important;
+  border-radius: 20px;
+  font-size:15px;
+  font-family: 'Figtree', sans-serif;
+}
+
+.btn-outline-dark-red :hover { /*  the hover color of outline buttons */ 
+  background-color: white;
+  color: white;
+  border-color: #53131E !important;
+}
+
+.btn-filled-dark-red { /*  the color of outline buttons */ 
+color: white; 
+background-color:#A30000 !important;
+border-color: #53131E !important;
+border-radius: 20px;
+font-size:15px;
+font-family: 'Figtree' , sans-serif;
+}
+
+.btn-filled-dark-red:hover { /*  the hover color of outline buttons */ 
+background-color: white;
+color: white;
+border-color: #53131E !important;
+}
+
+
+
+/* Horizontal Dropdown Menu Styling */
+.navbar-nav.horizontal-dropdown {
+  display: flex;
+  justify-content: center;
+  list-style: none; /* Remove bullet points */
+}
+
+.navbar-nav.horizontal-dropdown .nav-item {
+  position: relative;
+
+}
+
+.navbar-nav.horizontal-dropdown .dropdown-toggle {
+  padding: 8px 15px;
+  text-decoration: none; /* Remove underlines */
+}
+
+
+
+
+
+.navbar-nav.horizontal-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: none;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+  z-index: 1000;
+  min-width: 100%;
+  text-align: left;
+  list-style: none; /* Remove bullet points from dropdown */
+  padding: 0; /* Remove default padding from dropdown list */
+}
+
+.navbar-nav.horizontal-dropdown .dropdown-item {
+  padding: 8px 15px;
+  color: #226F54;
+  display: block;
+  clear: both;
+  white-space: nowrap;
+  font-size: 13px; 
+  text-decoration: none; /* Remove underlines from dropdown items */
+  font-family: 'Figtree', sans-serif;
+}
+
+.navbar-nav.horizontal-dropdown .nav-item:hover .dropdown-menu,
+.navbar-nav.horizontal-dropdown .nav-item .dropdown-menu:hover {
+  display: block;
+}
+
+/* Remove line from first word next to logo */
+.navbar-nav.horizontal-dropdown .nav-item:first-child .nav-link {
+  border-left: none; /* Remove left border */
+}
+
+.navbar-brand .brand-text { /* New style for the text */
+  color: #53131E; 
+  font-size: 24px; /* Increased font size (adjust as needed) */
+  text-decoration: none; /* Remove underline */
+  margin-left: 0px; /* Add some space between logo and text */
+  font-family: 'Ador Hairline Bold', serif;
+  font-weight: bold;
+
+}
+
+
+/* Footer Styles */
+footer {
+  background-color: white; /* Light gray background */
+  padding: 0px;
+  font-size: 14px;
+  color: #333;
+  border-top: 2px solid #ddd; /* Add the top border */
+  margin-top: auto; /* Push the footer to the bottom */
+  padding-top:30px;
+
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  justify-content: space-around; /* Distributes items evenly */
+  max-width: 1200px; /* Sets a maximum width for the footer */
+  margin: 0 auto; /* Centers the footer content */
+
+}
+
+
+.footer-section {
+flex-basis: auto; /* Adjust percentage as needed */
+flex-grow: 0; /* Important: Prevent sections from growing */
+flex-shrink: 0; /* Important: Prevent sections from shrinking */
+margin: 0 10px; /* Add small horizontal margins for spacing between sections */
+margin-bottom: 20px; /* Keep vertical margin for wrapping */
+}
+.footer-section h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #53131E; /* Dark blue heading color */
+  font-family: 'Figtree', sans-serif;
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  
+}
+
+.footer-list li {
+  margin-bottom: 5px;
+  
+}
+
+.footer-list a {
+  color: #19180A;
+  font-family: 'Figtree', sans-serif;
+ 
+}
+.footer-link {
+  color: gray;
+  text-decoration: none;
+  position: relative; /* Needed for positioning the line */
+  padding: 0 10px; /* Add some horizontal padding */
+  font-size: 18px; 
+}
+
+
+
+.footer-list li a {
+display: inline-block;
+padding: 5px 0; /* Adjust vertical padding if needed */
+transition: border-color 0.3s ease;
+border-bottom: 1px solid transparent;
+line-height: 1; /* Key change: Remove extra line height */
+text-decoration: none; 
+font-family: 'Figtree', sans-serif;
+}
+
+.footer-list li a:hover {
+border-bottom: 1px solid #19180A;
+}
+
+
+.main-content {
+  min-height: calc(100vh - 150px); /* Adjust 150px as needed */
+  padding-bottom: 50px; /* Add space at the bottom for the footer */
+}
+
+.footer-bottom {
+  background-color: #051C38;
+  color: white;
+  /* REMOVE PADDING FROM HERE: */
+  /* padding: 20px 0; */
+  display: flex; /* Make .footer-bottom a flex container */
+  justify-content: center; /* Center the inner content */
+  padding: 0; /* Reset padding here */
+}
+
+.footer-bottom-inner {
+  display: flex;
+  align-items: center;
+  max-width: 100%; /* Or 1200px if you want a max-width */
+  margin: 10 px ;
+  background-color: white;
+  color: #333;
+  justify-content: space-between; 
+  padding: 30px;
+  width: 100% ; /* Or flex-basis: 100 % ; - either will work now */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+
+.copyright {
+display: flex;
+align-items: center;
+gap: 20px;
+font-family: 'Figtree', sans-serif;
+
+}
+
+.copyright a:hover{
+border-bottom: 1px solid ;
+
+}
+
+.social-icons {
+display: flex;
+gap: 30px;
+}
+
+.social-icons img {
+width: 20px;
+height: 20px;
+}
+
+.home-section {
+padding-top: 60px; 
+padding-bottom:20px; /* Add top and bottom padding */
+
+}
+
+.home-content {
+display: flex;
+align-items: flex-start; /* Key change: Align items to the top */
+max-width: 1200px;
+margin: 0 auto;
+
+}
+
+.home-text {
+flex: 1; /* Allow text to take up available space */
+font-family: 'Figtree', sans-serif;
+padding-right:90px;
+}
+
+.home-text h1 {
+font-size: 40px; /* Adjust as needed */
+margin-bottom: 150px;
+color: #A30000;
+font-weight: bold;
+
+font-family: 'Ador Hairline',;
+}
+
+.sub-text {
+margin-bottom: 1px;
+font-family: 'Figtree', sans-serif;
+}
+
+.sub-text h2 {
+font-size: 2rem; /* Adjust as needed */
+color:#53131E; 
+font-weight: bold;
+font-family: 'Figtree', sans-serif;
+}
+
+.sub-text h3 {
+font-size: 1.5rem; /* Adjust as needed */
+color: #53131E; /* Dark blue color */
+font-family: 'Figtree Italic', sans-serif; /* Use the correct name */
+font-style: italic; /* You can include this, but it will be ignored */
+/* font-family: 'Figtree', sans-serif;
+ font-style: italic; */
+
+}
+
+.sub-text p {
+  font-size: 18px !important; /* Adjust as needed */
+  color: #19180A; /* Dark blue color */
+  font-family: 'Figtree Italic', sans-serif; /* Use the correct name */
+  
+  }
+.home-text p {
+font-size: 1rem; /* Adjust as needed */
+line-height: 1.6; /* Improve readability */
+margin-bottom: 20px;
+color:#19180A;
+font-family: 'Figtree', sans-serif;
+}
+
+.home-buttons {
+display: flex;
+gap: 10px;
+}
+
+.home-image {
+flex: 1; /* Allow image to take up available space */
+
+width:10px;
+height: 150px;
+border-radius: 10px;
+padding-left:90px;
+}
+.home-image img {
+width: 500 px  ; /* Image will be 80% of its container s width */
+height: 500 px;
+border-radius: 10px;
+}
+.contact-button {
+color: #051C38 !important; /* Dark blue color */
+}
+
+.hero-section {
+position: relative;
+overflow: hidden;
+padding: 1px 1px;
+}
+
+/* .hero-image {
+width: 300px !important;
+height: 750px;
+margin: 40 40px;
+overflow: hidden;
+border-radius: 10px;
+
+}
+.hero-image img {
+width: 300px !important;
+height: 750px;
+display: block;
+object-fit: cover; 
+} */
+
+.image-wrapper { /* Style the wrapper div */
+padding: 0 50px; /* Add left and right padding */
+}
+
+.hero-overlay {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 450px;
+display: flex;
+flex-direction: column;
+align-items: flex- start;
+justify-content: space-between;
+padding: 30px;
+overflow: hidden; 
+
+}
+
+.hero-content {
+text-align: left;
+/* max-width: 900px; */
+padding-top: 50px;
+padding-left:180px;
+
+}
+.hero-content h1 {
+font-size: 2.5rem; /* Adjust font size as needed */
+margin-bottom: 15px;
+color: white !important;
+font-weight: bold;
+font-family: 'Figtree', sans-serif;
+}
+
+.hero-content p {
+font-size: 1rem; /* Adjust font size as needed */
+line-height: 1.6;
+margin-bottom: 25px;
+color:#19180A !important;
+font-family: 'Figtree', sans-serif;
+}
+
+.hero-buttons {
+display: flex;
+justify-content: flex-start; /* Center buttons horizontally */
+align-self: center; /* Center buttons horizontally */
+margin-bottom: 30px; /* Add space at the bottom */
+gap: 15px;
+}
+
+.paddingg{
+padding-top:135px;
+font-family: 'Figtree', sans-serif;
+}
+
+
+
+.two-images-section {
+display: flex;
+justify-content: space-around;
+padding: 0px;
+}
+
+
+
+.image-text {
+text-align: bottom;
+padding-top:250px; 
+color:#19180A !important;
+font-family: 'Figtree', sans-serif;
+
+}
+
+.image-text p {
+font-size: 1rem;
+line-height: 1.6;
+color:#19180A !important;
+font-family: 'Figtree', sans-serif;
+
+}
+
+/* Responsive adjustments (example) */
+@media (max-width: 768px) {
+.two-images-section {
+flex-direction: column;
+}
+
+.image-container {
+width: 90%;
+margin: 20px auto;
+}
+}
+
+.cta-section {
+width: 100%;
+background-color: #A30000 !important; /* Light blue color - adjust as needed */
+padding: 20px 0; /* Adjust vertical padding as needed */
+text-align: center; /* Center the text horizontally */
+}
+
+.cta-content {
+max-width: 900px; /* Set a maximum width for the content (optional) */
+margin: 0 auto; /* Center the content horizontally */
+
+}
+
+.cta-content p {
+font-size: 1.2rem; /* Adjust font size as needed */
+color: white; /* Dark blue text color */
+font-weight:300;
+font-family: 'Figtree', sans-serif;
+
+}
+
+.cta-content a {
+color: white; /* Dark blue link color */
+text-decoration: underline; /* Add underline to the link */
+font-weight:bold;
+font-family: 'Figtree', sans-serif;
+}
+.hero-section2 {
+position: relative;
+overflow: hidden;
+padding: 50px 70px;
+}
+
+.hero-image2 {
+width: 100%;
+height: auto;
+overflow: hidden;
+border-radius: 10px;
+
+}
+
+.hero-image2 img {
+width: 100%;
+height: 450px;
+display: block;
+object-fit: cover; 
+
+}
+.image-wrapper2 { /* Style the wrapper div */
+padding: 0 50px; /* Add left and right padding */
+}
+.hero-overlay2 {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 450px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.hero-content2 {
+text-align: center;
+max-width: 700px;
+
+}
+.hero-content2 h1 {
+font-size: 2.2rem; /* Adjust font size as needed */
+margin-bottom: 15px;
+color: #53131E;
+font-weight: bold;
+font-family: 'Figtree', sans-serif;
+}
+
+.hero-content2 p {
+font-size: 1rem; /* Adjust font size as needed */
+line-height: 1.6;
+margin-bottom: 25px;
+font-family: 'Figtree', sans-serif;
+}
+
+.hero-buttons2 {
+display: flex;
+justify-content: center; /* Center buttons horizontally */
+
+margin-bottom: 30px; /* Add space at the bottom */
+gap: 15px;
+}
+
+.paddingg2{
+padding-top:100px;
+font-family: 'Figtree', sans-serif;
+}
+.logo-text-container {
+display: flex; /* Arrange logo and text horizontally */
+align-items: center; /* Vertically align logo and text */
+margin-bottom: 20px; /* Space below the logo and text */
+justify-content: center; /* Center horizontally */
+padding-top:100px;
+}
+.small-logo {
+margin-right: 10px; /* Space between logo and text */
+}
+
+.small-logo img {
+max-width: 120px; /* Adjust logo size as needed */
+height: auto;
+}
+.small-text p {
+font-size: 1.7rem; /* Adjust text size as needed */
+color: #19180A; /* Or a color that matches your design */
+white-space: nowrap; /* Prevent text from wrapping */
+padding-top:20px;
+font-weight: bold;
+font-family: 'Ador Hairline Bold', serif;
+}
+
+
+
+
+.text-container {
+margin-bottom: 13px;
+padding-left:55px;
+padding-right:55px;
+font-family: 'Figtree', sans-serif;
+}
+.text-container h2 {
+font-size: 2rem;
+line-height: 1.4;
+color: #53131E;
+font-family: 'Figtree', sans-serif;
+
+}
+.text-container h3 {
+font-size: 1.6rem;
+line-height: 1.4;
+color: #19180A;
+font-family: 'Ador Hairline Bold', serif;
+font-weight:bold;
+}
+.button-container {
+margin-bottom: 20px;
+font-size:17px;
+}
+.button-container a {
+font-size:17px;
+}
+.login-link-wrapper {
+background-color: #226F54;
+border-top: 1px solid #ddd;
+margin-top: 20px;
+border-radius: 0 0 10px 10px;
+display: flex; /* Use flexbox for layout */
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+height:150px;
+}
+.login-link {
+text-align: center;
+}
+.login-link p {
+font-size: 1rem;
+color: white;
+padding-top:30px;
+font-family: 'Figtree', sans-serif;
+}
+.login-link a {
+color: white; /* Blue link color */
+text-decoration: underline;
+font-weight:bold;
+font-family: 'Figtree', sans-serif;
+}

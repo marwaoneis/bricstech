@@ -1,0 +1,1166 @@
+<style>
+
+.fix-navbar {
+  display: inline-flex !important;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none; 
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  
+}
+
+
+.navbar-brand {
+
+  display: inline-flex !important;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none; 
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+
+.fix-navbar  img {
+  margin-right: 10px;
+  width: 100px;
+  height: auto;
+}
+
+.fix-nav .nav-link {
+  padding: 8px 15px;
+  color: #19180A;
+  font-family: 'Figtree', sans-serif;
+}
+
+.fix-nav .dropdown-item {
+  color: #333;
+  font-family: 'Figtree' , sans-serif ;
+}
+
+.btn {
+  padding: 8px 15px;
+  font-size: 13px;
+  font-family: 'Figtree' , sans-serif;
+}
+
+/* Center the navbar content */
+.container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fix-collapse {
+  justify-content: center;
+  flex-grow: 0;
+}
+
+.fix-nav {
+  margin: 0 auto;
+}
+
+.fix-nav .nav-item {
+  margin: 0 5px;
+  
+}
+.d-flex {
+  gap: 10px;
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+  border: none;
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Rounded, Dark Blue Buttons */
+.btn-rounded {
+  border-radius: 20px;
+  color: white !important;
+  padding: 8px 20px;
+  text-decoration: none;
+}
+
+.btn-dark-blue {
+  background-color: #226F54;
+  border-color: #226F54 !important;
+  font-size:14px;
+  font-family: 'Figtree' , sans-serif;
+}
+.btn-dark-blue2 {
+  background-color: #A30000;
+  border-color: #A30000 !important;
+  font-family: 'Figtree' , sans-serif;
+  font-size:14px;
+}
+
+.btn-dark-blue:hover { /* Hover color for book a demo button */ 
+  background-color: #226F54 !important; 
+  border-color: #226F54 !important; 
+}
+
+.btn-dark-blue2:hover {  /* Hover color for sign up and login buttons */ 
+  background-color: #A30000 !important; 
+  border-color: #A30000 !important; 
+}
+
+.btn-outline-dark-red { /*  the color of outline buttons */ 
+  color: #53131E !important; 
+  border-color: #53131E !important;
+  border-radius: 20px;
+  font-size:15px;
+  font-family: 'Figtree', sans-serif;
+}
+
+.btn-outline-dark-red :hover { /*  the hover color of outline buttons */ 
+  background-color: white;
+  color: white;
+  border-color: #53131E !important;
+}
+
+.btn-filled-dark-red { /*  the color of outline buttons */ 
+color: white; 
+background-color:#A30000 !important;
+border-color: #53131E !important;
+border-radius: 20px;
+font-size:15px;
+font-family: 'Figtree' , sans-serif;
+}
+
+.btn-filled-dark-red:hover { /*  the hover color of outline buttons */ 
+background-color: white;
+color: white;
+border-color: #53131E !important;
+}
+
+
+.btn-filled-dark-red svg {
+  width: 10px; /* Adjust size as needed */
+  height: 10px; /* Adjust size as needed */
+}
+
+.btn-filled-dark-red:hover svg path {
+  fill: white; /* Arrow color on hover */
+}
+ 
+
+
+.btn-outline-dark-red svg {
+  width: 10px; /* Adjust size as needed */
+  height: 10px; /* Adjust size as needed */
+}
+
+.btn-outline-dark-red:hover svg path {
+  fill: #53131E; /* Arrow color on hover */
+}
+
+
+
+
+
+
+.btn-white-filled-dark-red { 
+color: #19180A !important; 
+# color:black;
+background-color: #FFFFF2 !important;
+border-color: #53131E !important;
+
+border-radius: 20px;
+font-size:15px;
+font-family: 'Figtree' , sans-serif;
+}
+
+.btn-white-filled-dark-red:hover { 
+background-color: white;
+color: #19180A;
+# border-color: #53131E !important;
+}
+
+/* Horizontal Dropdown Menu Styling */
+.fix-nav.horizontal-dropdown {
+  display: flex;
+  justify-content: center;
+  list-style: none; /* Remove bullet points */
+}
+
+.fix-nav.horizontal-dropdown .nav-item {
+  position: relative;
+
+}
+
+.fix-nav.horizontal-dropdown .dropdown-toggle {
+  padding: 8px 15px;
+  text-decoration: none; /* Remove underlines */
+}
+
+
+
+
+
+.fix-nav.horizontal-dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: none;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+  z-index: 1000;
+  min-width: 100%;
+  text-align: left;
+  list-style: none; /* Remove bullet points from dropdown */
+  padding: 0; /* Remove default padding from dropdown list */
+}
+
+.fix-nav.horizontal-dropdown .dropdown-item {
+  padding: 8px 15px;
+  color: #226F54;
+  display: block;
+  clear: both;
+  white-space: nowrap;
+  font-size: 13px; 
+  text-decoration: none; /* Remove underlines from dropdown items */
+  font-family: 'Figtree', sans-serif;
+}
+
+.fix-nav.horizontal-dropdown .nav-item:hover .dropdown-menu,
+.fix-nav.horizontal-dropdown .nav-item .dropdown-menu:hover {
+  display: block;
+}
+
+/* Remove line from first word next to logo */
+.fix-nav.horizontal-dropdown .nav-item:first-child .nav-link {
+  border-left: none; /* Remove left border */
+}
+
+.fix-navbar .brand-text { /* New style for the text */
+  color: #53131E; 
+  font-size: 24px; /* Increased font size (adjust as needed) */
+  text-decoration: none; /* Remove underline */
+  margin-left: 0px; /* Add some space between logo and text */
+  font-family: 'Ador Hairline Bold', serif;
+  font-weight: bold;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.home-section {
+padding-bottom:20px;
+padding-top:10px;
+
+}
+
+.home-content {
+display: flex;
+align-items: flex-start; /* Key change: Align items to the top */
+max-width: 1200px;
+margin: 0 auto;
+
+}
+
+.home-text {
+flex: 1; /* Allow text to take up available space */
+font-family: 'Figtree', sans-serif;
+padding-right:90px;
+font-family: 'Figtree' , sans-serif;
+}
+
+.home-text h1 {
+font-size: 40px; /* Adjust as needed */
+margin-bottom: 10px;
+color: #A30000;
+font-weight: bold;
+font-family: 'Figtree' , sans-serif;
+}
+.home-text2 {
+flex: 1; /* Allow text to take up available space */
+font-family: 'Figtree', sans-serif;
+padding-right:90px;
+font-family: 'Figtree' , sans-serif;
+}
+
+.home-text2 h1 {
+font-size: 25px; /* Adjust as needed */
+margin-bottom: 20px;
+color: #53131E;
+font-weight: bold;
+font-family: 'Figtree' , sans-serif;
+}
+
+.home-text2 p {
+margin-bottom: 10px;
+font-family: 'Figtree' , sans-serif;
+font-size: 1.2rem; /* Adjust as needed */
+color:#19180A;
+}
+.sub-text {
+margin-bottom: 20px;
+font-family: 'Figtree', sans-serif;
+}
+
+
+.home-text p {
+font-size: 1.2rem; /* Adjust as needed */
+line-height: 1.6; /* Improve readability */
+margin-bottom: 40px;
+color:#19180A;
+font-family: 'Figtree', sans-serif;
+}
+
+.home-buttons {
+display: flex;
+gap: 10px;
+}
+
+.home-image {
+flex: 1; /* Allow image to take up available space */
+padding-bottom:30px;
+width:10px ;
+height: 50px;
+padding-left:90px;
+}
+
+.home-image img {
+width: 450px  ; /* Image will be 80% of its container s width */
+height: 450px;
+padding-bottom:10px;
+margin-bottom: 10px;
+border-radius: 0 !important;
+}
+
+.contact-button {
+color: #051C38 !important; /* Dark blue color */
+}
+
+
+.container {
+    width:750px; 
+    height:350px;
+  border: 1.4px solid black; /* Black border */
+  border-radius: 30px; /* Rounded corners */
+#   width: fit-content; /* Adjust as needed */
+  overflow: hidden; /* Prevents image from overflowing */
+  display: flex;
+  flex-direction: column; /* Arranges items vertically */
+  align-items: start; /* Centers items horizontally */
+  padding: 2.5px; /* Adds padding inside the container */
+  padding-bottom:3px;
+  padding-left:10px;
+margin-right:10px;
+margin-left:40px;
+
+}
+
+
+.container h1{
+  font-size: 30px; /* Adjust as needed */
+margin-bottom: 20px;
+color: #53131E;
+font-weight: bold;
+font-family: 'Figtree' , sans-serif;
+padding-top : 20px;
+padding-left: 160px, 
+padding-bottom:10px;
+}
+
+.container p{
+  margin-bottom: 10px;
+font-family: 'Figtree' , sans-serif;
+font-size: 1.2rem; /* Adjust as needed */
+color:#19180A;
+padding-top : 5px;
+padding-left: 160px, 
+padding-bottom:1x;
+
+}
+
+.container img {
+width: 539.4px  ; /* Image will be 80% of its container s width */
+height: 450px;
+padding-bottom:2px;
+padding-left:1px;
+padding-right:1px;
+border-radius: 30px; /* Slightly rounded corners */
+}
+
+.buttons {
+  display: flex; /* Arranges buttons horizontally */
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 3px; /* Adds space between buttons */
+  width: 100%;
+}
+
+.button {
+  background-color: #134611; /* Green background */
+  color: white; /* White text */
+  border: none; /* Removes default button border */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border-radius: 15px; /* Slightly rounded corners */
+  text-align: center; /* Centers text inside button */
+  font-family: 'Figtree', sans-serif; /* Use Figtree font */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  width: 100%; /* Buttons take full width */
+  height:65px;
+  box-sizing: border-box; /* Prevents padding from affecting width */
+}
+
+.button:hover {
+  background-color: #1A5A44; /* Darker green on hover */
+}
+
+
+
+
+
+.columndisplay {
+  display: flex;
+  flex-direction: column; /* Arranges items vertically */
+}
+
+
+.rowdisplay {
+  display: flex;
+  flex-direction: row; /* Arranges items vertically */
+}
+
+
+
+
+
+
+.image-container {
+  position: relative; /* Needed for absolute positioning of the text */
+  display: inline-block; /* Or block, depending on your layout */
+  width: 35%; /* Ensures image fills the container */
+  height: 700px; /* Maintains aspect ratio */
+  border-radius: 20px;
+
+}
+
+.image-container img {
+  display: block; /* Prevents a small gap below the image */
+  width: 100%; /* Ensures image fills the container */
+  height: 700px; /* Maintains aspect ratio */
+  border-radius: 20px;
+}
+
+.text-overlay {
+  position: absolute; /* Positions the text over the image */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; /* Arranges words vertically */
+  justify-content: center; /* Vertically centers the words */
+  align-items: center; /* Horizontally centers the words */
+  pointer-events: none; /* Allows clicks to pass through to the image */
+}
+
+.word1 {
+  font-family: 'Figtree', sans-serif;
+  font-size: 2em; /* Adjust font size as needed */
+  color: #A30000; /* Text color */
+  text-align: start; /* Centers text within each word container */
+  margin: 0.1em 0; /* Adjust spacing between words */
+  padding-top:510px;
+  padding-right:180px;
+  font-weight:bold;
+}
+
+.word2 {
+  font-family: 'Figtree', sans-serif;
+  font-size: 2em; /* Adjust font size as needed */
+  color: white; /* Text color */
+  text-align: start; /* Centers text within each word container */
+  margin: 0.1em 0; /* Adjust spacing between words */
+  padding-right:200px;
+  font-weight:bold;
+}
+
+.word3 {
+  font-family: 'Figtree', sans-serif;
+  font-size: 2em; /* Adjust font size as needed */
+  color: #19180A; /* Text color */
+  text-align: start; /* Centers text within each word container */
+  margin: 0.1em 0; /* Adjust spacing between words */
+  padding-right:250px;
+  font-weight:bold;
+}
+
+.smallimage {
+  position: relative; /* Needed for absolute positioning of the text */
+  display: inline-block; /* Or block, depending on your layout */
+  width:  750px; /* Ensures image fills the container */
+  height: 380px; /* Maintains aspect ratio */
+  border-radius: 20px;
+  padding: 2.5px; /* Adds padding inside the container */
+  padding-bottom:3px;
+  padding-left:10px;
+margin-right:10px;
+margin-left:40px;
+padding-top:20px;
+}
+
+.smallimage img {
+  display: block; /* Prevents a small gap below the image */
+  width: 100%; /* Ensures image fills the container */
+  height: 330px; /* Maintains aspect ratio */
+  border-radius: 20px;
+}
+
+
+.smallcontainer {
+    width:800px; 
+    height:190px;
+  border: 1.4px solid black; /* Black border */
+  border-radius: 20px; /* Rounded corners */
+#   width: fit-content; /* Adjust as needed */
+  overflow: hidden; /* Prevents image from overflowing */
+  display: flex;
+  flex-direction: column; /* Arranges items vertically */
+  align-items: start; /* Centers items horizontally */
+  
+  margin-bottom:30px;
+  padding-left:30px;
+  padding-top:10px;
+/* margin-right:10px; */
+/* margin-left:5px; */
+}
+
+
+.smallcontainer2 {
+    width:700px; 
+    height:200px;
+  border: 1.4px solid black; /* Black border */
+  border-radius: 20px; /* Rounded corners */
+#   width: fit-content; /* Adjust as needed */
+  overflow: hidden; /* Prevents image from overflowing */
+  display: flex;
+  flex-direction: column; /* Arranges items vertically */
+  align-items: start; /* Centers items horizontally */
+  
+  
+    margin-bottom:30px;
+  padding-left:30px;
+  padding-top:10px;
+/* margin-right:10px; */
+margin-left:10px; 
+/* margin-top:40px; */
+}
+
+
+.smallcontainer p {
+  margin-bottom: 10px;
+font-family: 'Figtree' , sans-serif;
+font-size: 1.1rem; /* Adjust as needed */
+color:#19180A;
+padding-top : 5px;
+padding-left: 90px !important, 
+padding-bottom:1x;
+
+}
+
+.smallcontainer2 p {
+  margin-bottom: 10px;
+font-family: 'Figtree' , sans-serif;
+font-size: 1.1rem; /* Adjust as needed */
+color:#19180A;
+padding-top : 5px;
+padding-left: 160px, 
+padding-bottom:1x;
+
+}
+.tall-btn-filled-dark-red { /*  the color of outline buttons */ 
+color: white; 
+background-color:#226F54 !important;
+border-color: #226F54 !important;
+border-radius: 20px;
+font-size:15px;
+font-family: 'Figtree' , sans-serif;
+margin-top:10px;
+}
+
+.tall-btn-filled-dark-red:hover { /*  the hover color of outline buttons */ 
+background-color: white;
+color: white;
+border-color: #226F54 !important;
+}
+ 
+
+.smallimage2 {
+  position: relative; /* Needed for absolute positioning of the text */
+  display: inline-block; /* Or block, depending on your layout */
+  width:  350px; /* Ensures image fills the container */
+  height: 100px; /* Maintains aspect ratio */
+  border-radius: 20px;
+  padding: 2.5px; /* Adds padding inside the container */
+  padding-bottom:3px;
+  padding-left:10px;
+margin-right:10px;
+/* margin-left:10px; */
+/* padding-top:2px; */
+}
+
+.smallimage2 img {
+  display: block; /* Prevents a small gap below the image */
+  width: 100%; /* Ensures image fills the container */
+  height: 270px; /* Maintains aspect ratio */
+  border-radius: 20px;
+}
+
+.smallimage3 {
+  position: relative; /* Needed for absolute positioning of the text */
+  display: inline-block; /* Or block, depending on your layout */
+  width:  450px; /* Ensures image fills the container */
+  height: 250px; /* Maintains aspect ratio */
+  border-radius: 20px;
+  padding-bottom:350px;
+  /* padding-left:10px; */
+margin-right:10px;
+/* margin-left:1px; */
+padding-top:2px;
+margin-bottom:25px;
+}
+
+.smallimage3 img {
+  display: block; /* Prevents a small gap below the image */
+  width: 100%; /* Ensures image fills the container */
+  height: 350px; /* Maintains aspect ratio */
+  border-radius: 20px;
+}
+ 
+
+
+ 
+.smallimage4 {
+  position: relative; /* Needed for absolute positioning of the text */
+  display: inline-block; /* Or block, depending on your layout */
+  width:  370px; /* Ensures image fills the container */
+  height: 220px; /* Maintains aspect ratio */
+  border-radius: 20px;
+  padding-bottom:350px;
+  padding-left:10px;
+margin-right:10px;
+margin-left:10px;
+padding-top:2px;
+/* margin-bottom:25px; */
+}
+
+.smallimage4 img {
+  display: block; /* Prevents a small gap below the image */
+  width: 100%; /* Ensures image fills the container */
+  height: 405px; /* Maintains aspect ratio */
+  border-radius: 20px;
+}
+ 
+.cta-section {
+  width: 100% !important; /* Make sure it takes full width of its parent */
+  background-color: #A30000;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.cta-content {
+  max-width: 1200px; /* Set a maximum width - adjust as needed */
+  margin: 0 auto; /* Center horizontally */
+  padding: 0 20px; /* Add some horizontal padding */
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  color: white;
+  font-family: 'Figtree', sans-serif;
+  font-weight: 300;
+}
+
+.cta-content a {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: 'Figtree', sans-serif;
+}
+
+.cta-content a:hover {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+
+
+
+
+
+.signup-section {
+width: 900px!important;
+padding: 50px 0; /* Adjust vertical padding as needed */
+display: flex; /* Use flexbox for centering */
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+min-height: 700px;
+
+}
+
+.signup-content {
+  margin-left:720px;
+  margin-right:200px;
+  width:1000px;
+border-radius: 10px; /* Rounded corners */
+text-align: center; /* Center text horizontally */
+border: 2px solid #226F54;
+}
+
+.logo-container {
+margin-bottom: 10px;
+padding-top:20px;
+}
+
+.logo-container img {
+max-width: 100px; /* Adjust logo size as needed */
+height: auto;
+padding-top:20px;
+}
+.text-container {
+margin-bottom: 13px;
+padding-left:55px;
+padding-right:55px;
+font-family: 'Figtree', sans-serif;
+
+}
+.text-container h2 {
+font-size: 2rem;
+line-height: 1.4;
+color: #53131E;
+font-family: 'Figtree', sans-serif;
+font-weight:bold;
+}
+.text-container h3 {
+font-size: 1.6rem;
+line-height: 1.4;
+color: #19180A;
+font-family: 'Ador Hairline Bold', serif;
+font-weight:bold;
+}
+.button-container {
+margin-bottom: 20px;
+font-size:17px;
+}
+.button-container a {
+font-size:17px;
+}
+.login-link-wrapper {
+background-color: #226F54;
+border-top: 1px solid #ddd;
+margin-top: 20px;
+border-radius: 0 0 10px 10px;
+display: flex; /* Use flexbox for layout */
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+height:150px;
+}
+.login-link {
+text-align: center;
+}
+.login-link p {
+font-size: 1rem;
+color: white;
+padding-top:30px;
+font-family: 'Figtree', sans-serif;
+}
+.login-link a {
+color: white; /* Blue link color */
+text-decoration: underline;
+font-weight:bold;
+font-family: 'Figtree', sans-serif;
+}
+
+
+
+
+
+
+
+.final-section {
+  padding: 50px 0; /* Adjust as needed */
+
+}
+
+.final-content {
+  max-width: 1000px; /* Or your preferred max-width */
+  margin: 0 auto;
+  border: 1px solid #226F54;
+  border-radius: 10px; /* Border radius - adjust as needed */
+  padding: 20px; /* Padding inside the container */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange items vertically */
+  gap: 20px; /* Spacing between elements */
+  align-items: center;
+ 
+}
+
+.final2 {
+  align-items: center;
+}
+.image-text-area {
+  display: flex; /* Use flexbox for image and text */
+  align-items: flex-start; /* Align items to the top */
+  gap: 20px; /* Spacing between image and text */
+ 
+}
+
+.final-image {
+  width: 200px !important; /* Or your preferred image width */
+}
+
+.final-image img {
+  width: 200px;
+  height: 150px;
+  display: block; /* Prevents a small gap below the image */
+  align-items: center !important;
+  # padding-right:200px;
+}
+
+.final-text {
+  flex: 1; /* Allow text to take up remaining space */
+}
+
+.small-containers-area {
+  display: flex; /* Use flexbox for the small containers */
+  gap: 1px; /* Spacing between the containers */
+}
+
+.small-container-left{
+  width:500px;
+  height:130px;
+  background-color: #226F54 !important;
+  flex: 1; /* Make containers take equal width */
+  padding: 20px; /* Padding inside the small containers */
+  border-radius: 5px; /* Border radius for the containers */
+  text-align: center; /* Center text within containers */
+}
+
+ .small-container-right {
+  width:500px;
+  height:130px;
+  background-color: #53131E !important;
+  flex: 1; /* Make containers take equal width */
+  padding: 20px; /* Padding inside the small containers */
+  border-radius: 5px; /* Border radius for the containers */
+  text-align: center; /* Center text within containers */
+}
+
+
+
+/* Optional: Add hover effect to small containers */
+.small-container-left:hover, .small-container-right:hover {
+  background-color: #ddd; /* Example hover color */
+}
+
+
+
+
+
+
+
+
+
+
+
+.button-container2 {
+margin-bottom: 3px;
+font-size:17px;
+}
+.button-container2 a {
+font-size:17px;
+} 
+
+
+</style>
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light" data-turbo-permanent>
+<div class="container-fluid">
+  <%= link_to root_path, class: "fix-navbar" do %>
+
+    <img style="width:150px;" src="<%= asset_path 'logo2.png' %>" alt="BRICStech Logo">
+    <span class="brand-text" style="font-size:40px;" >BRICStech</span>
+<% end %>
+
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+    <ul class="navbar-nav mx-auto horizontal-dropdown">
+      <%= render partial: 'shared/nav_links' %>
+    </ul>
+  </div>
+
+
+
+  <div class="d-flex">
+    <a href="#" class="btn btn-dark-blue btn-rounded me-2">Book a Demo</a>
+   
+    <a href="<%= login_path %>" class="btn btn-dark-blue2 btn-rounded me-2">Log In</a>
+  </div>
+</div>
+</nav>
+
+
+
+
+<div class="home-section">
+<div class="home-content">
+<div class="home-text">
+<h1>Our Story </h1>
+</div>
+</div>
+</div>
+
+
+
+<div class="home-section">
+<div class="home-content">
+<div class="image-container">
+<%= image_tag "1.png", alt: "Grey Box Image" %>
+  <div class="text-overlay">
+    <div class="word1">INNOVATION.</div>
+    <div class="word2">PRECISION.</div>
+    <div class="word3">IMPACT.</div>
+  </div>
+</div>
+<div class="columndisplay">
+<div class="container">
+<h1>Our Mission & Approach</h1>
+<p>
+The BRICStech Mission is rooted in empowering businesses,
+individuals, and communities. BRICStech is not just creating technology, we’re driving transformation. <br>
+</p>
+<p> 
+We believe in the power of collaboration. By working closely with <br>
+our clients and partners, we foster a culture of teamwork and knowledge-sharing that drives mutual success. 
+</p> 
+<div class="home-buttons" style="padding-top:30px;">
+<a href="#" class="btn btn-outline-dark-red btn-rounded">Partners
+<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0 L10 5 L0 10 Z" fill="#53131E"/>  
+</svg>
+</a>
+<a href="#" class="btn btn-filled-dark-red btn-rounded  ">Clients 
+<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0 L10 5 L0 10 Z" fill="white"/>  
+</svg>
+</a>
+</div>
+</div>
+
+<div class="smallimage">
+<%= image_tag "4.jpg", alt: "Grey Box Image" %> 
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div class="home-section">
+<div class="home-content">
+<div class="home-text2">
+<h1>What Makes BRICStech Different?</h1>
+<p>
+At BRICStech, we understand that achieving sustainable growth<br>
+requires more than just a one-size-fits-all solution.
+</p>
+</div>
+</div>
+</div>
+
+
+
+<div class="home-section">
+<div class="home-content">
+
+
+<div class ="columndisplay">
+<div class="smallcontainer">
+<div class="home-buttons">
+<a href="#" class="btn tall-btn-filled-dark-red btn-rounded  "> Positive Impact on Individuals & Communities</a>
+</div>
+<p>
+With a vision for an inclusive, tech-driven future. <br>
+</p>
+<p> 
+BRICStech is committed to shaping a brighter tomorrow, one where innovation meets 
+purpose, and technology drives progress for everyone. 
+</p> 
+</div>
+
+<div class="smallcontainer">
+<div class="home-buttons">
+<a href="#" class="btn tall-btn-filled-dark-red btn-rounded  "> Positive Impact on Businesses</a>
+</div>
+<p>
+We believe in creating impact through meaningful innovation. <br>
+</p>
+<p> 
+BRICStech is at the forefront of delivering innovative, scalable solutions that have a 
+positive impact with long-term sustainable growth on businesses.
+</p> 
+</div>
+</div>
+
+<div class="smallimage4">
+<%= image_tag "7.png", alt: "Grey Box Image" %> 
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+<div class="home-section">
+<div class="home-content">
+
+<div class="home-text2">
+<h1  > Why Us: Mission Focused</h1>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+<div class="home-section">
+<div class="home-content">
+
+<div class ="columndisplay"> 
+<div class="smallimage3">
+<%= image_tag "5.png", alt: "Grey Box Image" %> 
+</div>
+<div class="smallimage3">
+<%= image_tag "6.png", alt: "Grey Box Image" %> 
+</div>
+</div>
+
+
+
+<div class ="columndisplay">
+<div class="smallcontainer2" >
+<div class="home-buttons">
+<a href="#" class="btn tall-btn-filled-dark-red btn-rounded  ">  Our BRICStech Collective: Empowering Innovation Together</a>
+</div>
+<p> 
+The BRICStech Collective brings together visionary individuals,teams and organizations
+to co-create groundbreaking applications that drive global transformation. Partners are 
+an integral part of this journey, leveraging expertise, creativity, and shared goals.
+</p> 
+</div>
+ 
+<div class="smallcontainer2" >
+<div class="home-buttons">
+<a href="#" class="btn tall-btn-filled-dark-red btn-rounded  "> Our Client Solutions: Empowering Your Vision</a>
+</div>
+<p> 
+At BRICStech, we don’t just meet your business goals—we elevate them. With 
+innovative, tailored solutions, we help you unlock growth, tackle challenges, and thrive ,
+in a rapidly changing digital world. Let’s turn your ambitions into lasting impact.
+</p> 
+</div>
+
+<div class ="rowdisplay"> 
+<div class="smallimage2">
+<%= image_tag "3.png", alt: "Grey Box Image" %> 
+</div>
+<div class="smallimage2">
+<%= image_tag "2.png", alt: "Grey Box Image" %> 
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+<div class="cta-section">  
+  <div class="cta-content">
+    <p>Looking for a Custom Software Solution? <a href="#">Get In touch</a></p>
+  </div>
+</div>
+
+
+
+
+
+<div class="signup-section">
+<div class="signup-content">
+<div class="logo-container">
+  <%= image_tag "logo2.png", alt: "BRICStech Logo" %>
+  <div class="text-container">
+  <h3>BRICStech</h3>
+</div>
+</div>
+<div class="text-container">
+  <h2>Beyond Smart</h2>
+  <h2>Beyond Expectations.</h2>
+  <h2>Beyond With BRICStech.</h2>
+</div>
+
+
+
+
+
+
+<div class="small-containers-area"> 
+      <div class="small-container-left" >  
+      <div class="button-container2">
+  <a href="#" class="btn-white-filled-dark-red btn-rounded">Partners</a>
+</div>
+      <div class="login-link">
+      <p>Already have an account? <a href="#">Log In.</a></p>
+      </div>
+      </div>
+      <div class="small-container-right" >  
+      <div class="button-container2">
+  <a href="#" class="btn-filled-dark-red btn-rounded">Clients</a>
+</div>
+      <div class="login-link">
+      <p>Already know what your looking for?  <a href="#">Get In Touch.</a></p>
+      </div>
+      </div>
+    </div> 
+
+
+
+
+</div>
+</div>
+
+
+
+
